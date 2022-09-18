@@ -5,15 +5,15 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Data
-@AllArgsConstructor
+//@AllArgsConstructor
 public abstract class ElementaryDemand extends Demand {
 	
-	private String elementaryDemandHeader1;
-	private String elementaryDemandHeader2;
-	private String elementaryDemandHeader3;
+	//private String elementaryDemandHeader1;
+	//private String elementaryDemandHeader2;
+	//private String elementaryDemandHeader3;
 	
 	public ElementaryDemand() {
-		demandType = "elementary";
+		//demandType = "elementary";
 	}
 	
 }

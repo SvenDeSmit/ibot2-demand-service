@@ -1,7 +1,8 @@
 package be.snife.ibot.demand.out;
 
-import be.snife.ibot.demand.model.Demand;
+import be.snife.ibot.demand.out.dto.WorkflowDemand;
+import be.snife.ibot.demand.out.dto.WorkflowDemandReply;
 
 public interface WorkflowApiPort {
-	public String sendDemand(Demand demand);
+	public WorkflowDemandReply sendDemand(WorkflowDemand demand);
 }

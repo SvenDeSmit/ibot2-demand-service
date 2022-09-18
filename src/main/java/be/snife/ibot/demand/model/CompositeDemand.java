@@ -11,9 +11,9 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 public class CompositeDemand extends Demand {
 	
-	private String compositeDemandHeader1;
-	private String compositeDemandHeader2;
-	private String compositeDemandHeader3;
+	//private String compositeDemandHeader1;
+	//private String compositeDemandHeader2;
+	//private String compositeDemandHeader3;
 	
 
 	public CompositeDemand() {

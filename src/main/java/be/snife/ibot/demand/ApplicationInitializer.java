@@ -24,33 +24,24 @@ public class ApplicationInitializer implements InitializingBean {
 	private static Demand demand1 = makeDemand1();
 	
 	private static Demand makeDemand1() {
-		CompositeDemand list = new ListOfDemands("myListDemandHeader1");
+		CompositeDemand list = new ListOfDemands();
 		//list.setHeader(list.new DemandHeader("90-06-1968", "123456", "my-client-456789"));
 		list.setDossierId("123456");
 		list.setClientDemandReference("my-client-456789");
-		list.setCompositeDemandHeader1("myCompositeDemandHeader1");
-		list.setCompositeDemandHeader2("myCompositeDemandHeader2");
-		list.setCompositeDemandHeader3("myCompositeDemandHeader3");
+		//list.setCompositeDemandHeader1("myCompositeDemandHeader1");
+		//list.setCompositeDemandHeader2("myCompositeDemandHeader2");
+		//list.setCompositeDemandHeader3("myCompositeDemandHeader3");
 		ElementaryDemand d1 = new VIPDemand("myVipDemandHeader1","myVipDemandHeader2","myVipDemandField1","myVipDemandField2","myVipDemandField3");
 		d1.setDossierId("123456");
 		d1.setClientDemandReference("my-client-456789");
-		d1.setElementaryDemandHeader1("myElementaryDemandHeader1");
-		d1.setElementaryDemandHeader2("myElementaryDemandHeader2");
-		d1.setElementaryDemandHeader3("myElementaryDemandHeader3");
 		list.addDemand(d1);
 		ElementaryDemand d2 = new AUSADemand("myAusaDemandHeader1","myAusaDemandHeader2","myAusaDemandField1","myAusaDemandField2","myAusaDemandField3");
 		d2.setDossierId("123456");
 		d2.setClientDemandReference("my-client-456789");
-		d2.setElementaryDemandHeader1("myElementaryDemandHeader1");
-		d2.setElementaryDemandHeader2("myElementaryDemandHeader2");
-		d2.setElementaryDemandHeader3("myElementaryDemandHeader3");
 		list.addDemand(d2);
 		ElementaryDemand d3 = new CadasterDemand("myCadasterDemandHeader1","myCadasterDemandHeader2","myCadasterDemandField1","myCadasterDemandField2","myCadasterDemandField3");
 		d3.setDossierId("123456");
 		d3.setClientDemandReference("my-client-456789");
-		d3.setElementaryDemandHeader1("myElementaryDemandHeader1");
-		d3.setElementaryDemandHeader2("myElementaryDemandHeader2");
-		d3.setElementaryDemandHeader3("myElementaryDemandHeader3");
 		list.addDemand(d3);
 		return list;
 	}
